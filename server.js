@@ -6,6 +6,8 @@ const cors = require('cors');
 const passport = require('passport');
 const PORT = process.env.PORT || 8000;
 
+const models = require('./models/index')
+
 // Middleware
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
