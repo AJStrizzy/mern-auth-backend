@@ -12,11 +12,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.status(200).json({message: 'Smile you are being watched by the Backend Engineering Team'})
-})
+    res.status(200).json({message: 'Smile you are being watched by the Backend Engineering Team'});
+});
 
 app.listen(PORT, () => {
-    console.log(`You are jamming to the sounds 🎧 on port: ${PORT}`)
-})
+    console.log(`You are jamming to the sounds 🎧 on port: ${PORT}`);
+});
 
 
